@@ -3,9 +3,11 @@
 <%= render @friend %>
 
 <div>
-  <%= link_to "Edit", edit_friend_path(@friend) %> 
+  <%= link_to "Edit", edit_friend_path(@friend), class:"btn btn-dark" %> 
 
-  <%= link_to "Back", friends_path %>
+  <%= link_to "Back", friends_path, class:"btn btn-dark" %>
 
-  <%= button_to "Delete this friend", @friend, method: :delete %>
+<br />
+<br />
+  <%= button_to "Delete this friend", @friend, class:"btn btn-dark", method: :delete %>
 </div>
