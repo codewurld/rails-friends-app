@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # this automatically creates our different routes from our 'Scaffold' operation
+  # To see these routes in terminal --> rails routes
   resources :friends
   # get 'home/index'
 
