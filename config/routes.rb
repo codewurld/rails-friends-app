@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  
+   # this automatically creates our different routes from our Devise User Mgmt operation
   devise_for :users
   # this automatically creates our different routes from our 'Scaffold' operation
   # To see these routes in terminal --> rails routes
