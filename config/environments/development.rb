@@ -67,4 +67,8 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+  # action mailer -- allows us to send users a link if they forget their login details --> for decise management
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
 end

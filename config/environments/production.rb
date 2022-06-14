@@ -90,4 +90,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+# action mailer -- allows us to send users a link if they forget their login details --> for decise management
+# config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
 end
