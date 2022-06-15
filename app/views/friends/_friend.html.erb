@@ -2,13 +2,11 @@
 <div id="<%= dom_id friend %>">
 
 <div class="jumbotron">
-  <h1 class="display-4"><%= friend.first_name %> <%= friend.last_name %></h1>
-  <p class="lead"><%= friend.email %> | <%= friend.phone %> | <%= friend.twitter %></p>
+  <h2 class="display-4">
+  <%= link_to friend.first_name + " " +  friend.last_name, friend %>
+ </h2>
+ <p class="lead"><%= friend.email %> | <%= friend.phone %> | <%= friend.twitter %></p>
 
-  <p>
-      <%= link_to "Show this friend", friend %>
-    </p>
-    
   <hr class="my-4">
    
 <br />
