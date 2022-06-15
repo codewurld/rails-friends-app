@@ -1,14 +1,22 @@
 
 
 <%# <h1>Friends List</h1> %>
-
+<% if user_signed_in? %>
 <div id="friends">
+
   <% @friends.each do |friend| %>
+
     <%= render friend %>
-    <p>
-      <%= link_to "Show this friend", friend %>
-    </p>
+   
   <% end %>
 </div>
 
+<%# <p>You have no friends list yet, add below</p> %>
 <%= link_to "New friend", new_friend_path %>
+
+<%else%>
+
+<h1>Hello World!</h1>
+This is my first Rails Webpage...
+
+<% end %>
